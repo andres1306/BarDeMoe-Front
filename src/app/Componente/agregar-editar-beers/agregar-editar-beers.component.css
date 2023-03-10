@@ -1,0 +1,14 @@
+.card{
+    margin-top: 10px;
+    width: 80%;
+    margin-left:6%;
+    border-radius: 5px;
+}
+.btn{
+    background-color: green;
+    color: white;
+    margin-right: 10px;
+}
+.icons{
+    color: red;
+}

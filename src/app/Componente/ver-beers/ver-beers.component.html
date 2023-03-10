@@ -1,0 +1,28 @@
+<div>
+    <h1 class="title"> Ver cervezas </h1>
+</div>
+<app-spinner *ngIf="loading"></app-spinner>
+<div class="Container" *ngIf="Beer">
+
+    <mat-card class="card " >
+
+        <mat-card-header style="display: block;">
+          <div mat-card-avatar class="header-image"></div>
+          <img  width="50%" height="100%" src="{{Beer.linkIMG}}">
+        </mat-card-header>
+
+        <mat-card-content>
+
+          <p>{{Beer.name}} </p>
+          <p>{{Beer.price}}
+            <mat-icon class="icons">payment</mat-icon>  
+          </p>
+
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button routerLink="/ListarBeers" mat-raised-button > Volver</button>
+        </mat-card-actions>
+      </mat-card>
+
+</div>

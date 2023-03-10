@@ -1,0 +1,35 @@
+.card {
+    max-width: 400px;
+    margin-top: 5px;
+    margin: 5%;
+
+  }
+
+.Container{
+    text-align: center;
+    margin-top: 1%;
+}
+
+.MatContainer{
+    width: 80%;
+    display:grid ;
+    grid-column: auto;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    border:2px;
+    margin: 0 auto;
+}
+
+.priceIcon{
+    cursor: pointer;
+    color: green;
+}
+
+.BtnReturn{
+    width: 50px;
+    height: 50px;
+    position: sticky;
+    bottom: 10px;
+    border-radius: 50%;
+    background-color: green ;
+}
+

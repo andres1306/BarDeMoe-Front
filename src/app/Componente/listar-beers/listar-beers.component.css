@@ -1,0 +1,30 @@
+table {
+    width:100%;
+}
+
+td,th{
+    width:5%;
+    /*background-color: antiquewhite;
+    color: black;
+    border-color: black;*/
+}
+.mat-form-field{
+    width: 100%;
+}
+
+.delete{
+    cursor: pointer;
+    color: brown;
+}
+.edit{
+    cursor: pointer;
+    color: green;
+}
+.search{
+    cursor: pointer;
+    color: aqua;
+}
+.buy{
+    cursor:pointer;
+    color:#F0A04B ;
+}

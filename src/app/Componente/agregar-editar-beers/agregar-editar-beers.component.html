@@ -1,0 +1,56 @@
+<div>
+    <h1 class="title">Keep new beers</h1>
+</div>
+
+<app-spinner *ngIf="Loading"></app-spinner>
+
+<div class="container">
+    <mat-card class="card">
+        <mat-card-title class="title">
+             Beers Data
+        </mat-card-title>
+        <form (ngSubmit)="Keep_Beer()" [formGroup]="BeerGroup">
+            <mat-grid-list cols="2"rowHeight="80PX" >
+                <mat-grid-tile>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input formControlName="Name" matInput >
+                        <mat-icon class="icons" matSuffix>sports_bar</mat-icon>
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Price</mat-label>
+                        <input type="number" formControlName="Price"  matInput >
+                        <mat-icon class="icons" matSuffix> request_quote</mat-icon>
+                      </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Quantity</mat-label>
+                        <input type="number"  formControlName="Quantity"  matInput >
+                        <mat-icon class="icons" matSuffix>inventory</mat-icon>
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile>
+                    
+                    <mat-form-field appearance="outline">
+                        <mat-label>Content</mat-label>
+                        <input formControlName="Content"  matInput >
+                        <mat-icon  class="icons" matSuffix>water_drop</mat-icon>
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile [colspan]="2">
+                    <button [disabled]="BeerGroup.invalid" class="btn" typo="submit" mat-raised-button >Keep</button>
+                    <button routerLink="/ListBeer" mat-raised-button >Back</button>
+                </mat-grid-tile>
+
+            </mat-grid-list>
+        </form>
+    </mat-card>
+
+</div>
